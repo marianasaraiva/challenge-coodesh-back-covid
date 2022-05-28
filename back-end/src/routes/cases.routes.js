@@ -7,4 +7,7 @@ caseRouter.route('/')
 caseRouter.route('/:cases/count')
   .get(caseController.getAllCasesDateCount);
 
+caseRouter.route('/:cases/cumulative')
+  .get(caseController.getAllCasesDateCumulative);
+
 module.exports = caseRouter;
