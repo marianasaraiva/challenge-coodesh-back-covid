@@ -1,19 +1,13 @@
+const { fn, col } = require('sequelize');
 const { Case } = require('../../models');
 
 const getAllCasesDateCount = async (params) => {
   const result = await Case.findAll({
-    attributes : ['location', 'date', 'variant'],  
+    attributes : ['location', 'date', [fn('GROUP_CONCAT', col('variant')), 'variant']],
     where: { date: params },
-    group: ['location', 'variant'],
+    group: ['location'],
   });
-  const country = [...new Set(result.map((e) => e.location))];
-  const covid = country.map((location) => ({
-    location,
-    date: params,
-    variant: result.filter((country) => country.location === location).map(e => e.variant),
-  }));
-
-  return covid;
+  return result;
 };
 
 module.exports = getAllCasesDateCount;
