@@ -39,26 +39,25 @@ O objetivo foi exibir o número de casos de COVID por país, data e variante.
 Implementação das rotas `cases`, `dates` de acordo com as regras de negócio.
 
 
-### :warning: Documentação da API
+### :warning: Documentação da API e Acesso ao banco de dados
 
-[Acesse a documentação aqui]()
+[Acesse a documentação aqui](https://documenter.getpostman.com/view/20097451/Uz5CNeSc)
 
+[Acesse a API aqui](https://challenge-coodesh-covid-2022.herokuapp.com/)
+
+- Endpoints: `/`, `/cases`, `/cases/:date/count`, `/cases/:date/cumulative`
 
 
 ## :pushpin: Docker
 
 ### :wrench: Habilidades
 
-Criar um contêiner Docker para o banco de dados mysql.
-
-Criar um contêiner Docker para uma aplicação de back-end.
-
-Orquestrar os dois contêineres utilizando o Docker compose.
+Criar um container Docker para uma aplicação de back-end.
 
 
 ### :wrench: O que foi desenvolvido
 
-Habilidade de orquestrar containers com Docker compose, utilizando Docker.
+Habilidade de configurar um arquivo Docker compose e Dockerfile, utilizando Docker.
 
 
 ## :pushpin: Como acessar o projeto
@@ -71,7 +70,7 @@ Habilidade de orquestrar containers com Docker compose, utilizando Docker.
     * `docker-compose up`
 
 
-## :thought_balloon: Desnvolvido por  
+## :thought_balloon: Desenvolvido por  
 
 - GitHub - [Mariana Saraiva](https://github.com/marianasaraiva)
 
