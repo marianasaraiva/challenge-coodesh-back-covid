@@ -2,6 +2,8 @@
 
 > This is a challenge by [Coodesh](https://coodesh.com/)
 
+[Apresentação em video aqui](https://youtu.be/Kr1EaI1avzc)
+
 Desenvolvimento de uma REST API que utiliza o histórico de casos de Covid, disponível no [Kaggle](https://www.kaggle.com/datasets/yamqwe/omicron-covid19-variant-daily-cases).
 
 ## :pushpin: Back-end
